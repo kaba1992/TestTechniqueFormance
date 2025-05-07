@@ -2,8 +2,6 @@
 @import "./tailwind.css";
 @plugin "daisyui";
 
-
-
 #root {
 	width: 100%;
 	margin: 0 auto;
@@ -31,6 +29,10 @@
 }
 
 
+.text-to-type {
+	padding: 0 10px 0 0;
+	margin: 0;
+}
 
 .logo {
 	height: 6em;
@@ -44,7 +46,6 @@
 .logo.react:hover {
 	filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
 
 .card {
 	padding: 2em;

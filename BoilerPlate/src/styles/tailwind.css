@@ -1,15 +1,11 @@
 @tailwind utilities;
 
 	@font-face {
-		font-family: "Tagesschrift";
+		font-family: "PPNeueMachina";
 		font-weight: 400;
-		src: url("../assets/font/Tagesschrift-Regular.ttf") format('truetype');
+		src: url("../assets/font/PPNeueMachina-PlainVariable.ttf") format('truetype');
 	}
-	/* @font-face {
-		font-family: Tagesschrift;
-		font-weight: 500;
-		src: url('../assets/fonts/Tagesschrift-Medium.ttf') format('truetype');
-	} */
+
 
 
 @layer components {
@@ -18,8 +14,20 @@
 		background-color: #111827;
 	}
 
-	.tagesschrift-regular {
-		font-family: "Tagesschrift", system-ui;
+	.PPNeueMachina-regular {
+		font-family: "PPNeueMachina", system-ui;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.Inter-regular {
+		font-family: "Inter", system-ui;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.Roboto-regular {
+		font-family: "Roboto", system-ui;
 		font-weight: 400;
 		font-style: normal;
 	}

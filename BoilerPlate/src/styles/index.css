@@ -1,12 +1,10 @@
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+
 
 	color-scheme: dark;
 	color: rgba(255, 255, 255, 0.87);
 	background-color:#101114;
-
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -30,13 +28,10 @@ body {
 	width: auto;
 	overflow-x: hidden;
 	min-height: 100dvh;
-	border: 2px solid red;
+
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
-}
+
 
 
 
