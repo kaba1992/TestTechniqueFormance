@@ -1,23 +1,23 @@
-import React, { useEffect, useRef, useState } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ScrollSmoother } from "gsap/ScrollSmoother"
-import ConnectorsIcones from "../components/connectors/connectorsIcones"
+import React, { useEffect, useRef } from "react"
+import CircleIconsWrapper from "../components/connectors/CircleIconsWrapper"
 import { connectorsData } from "../constants/connectorsData"
 import Cta from "../components/utilsComponents/cta"
 import { typingEffect } from "../customHooks/typingEffect"
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
 
 let borderAnimClass =
 	"[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border"
-
+let center = (
+	<img
+		src="/icons/Formance.png"
+		alt="fctl"
+		className="w-[45px] h-[45px] rounded-full"
+	/>
+)
 const LandingPage = () => {
 	const containerRef = useRef<HTMLDivElement>(null)
 
-	useEffect(() => {
-		console.log(containerRef.current)
-	}, [])
 	useEffect(() => {
 		if (containerRef.current) {
 			typingEffect({
@@ -97,17 +97,15 @@ const LandingPage = () => {
 				</div>
 				<div id="bottom-block" className="w-full gap-12 ">
 					<div className="grid grid-cols-1 md:grid-cols-2  gap-6 bg-[#101114] p-6 rounded-xl w-full">
-						<div className="grid w-full  grid-cols-2 gap-[30px] sm:grid-cols-3 md:grid-cols-4 md:max-w-lg border-2 p-4 rounded-lg border-[#31363F]">
-							{connectorsData.map((connector, index) => (
-								<ConnectorsIcones
-									src={connector.src}
-									alt={connector.alt}
-									delay={index * 0.1}
-									key={connector.alt + index}
-								/>
-							))}
+						<div className="w-full min-h-[300px] flex items-center justify-center">
+							<CircleIconsWrapper
+								icons={connectorsData}
+								radius={120}
+								size={300}
+								center={center}
+							/>
 						</div>
-						<div className="flex flex-col items-center justify-start">
+						<div className="flex flex-col items-center justify-center">
 							<div className="grid max-w-lg gap-2">
 								<Cta
 									title="Connectors Store"

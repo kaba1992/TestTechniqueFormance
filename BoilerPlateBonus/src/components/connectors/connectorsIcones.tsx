@@ -34,7 +34,7 @@ export default function ConnectorsIcones({
 
 	const handleMouseEnter = contextSafe(() => {
 		gsap.to(imgRef.current, {
-			scale: 1.2,
+			scale: 1.4,
 			duration: 0.3,
 			ease: "power2.inOut",
 		})
@@ -50,7 +50,7 @@ export default function ConnectorsIcones({
 
 	return (
 		<img
-			className="w-[90px] rounded p-2"
+			className="w-[65px]   rounded p-2"
 			src={src}
 			alt={alt}
 			ref={imgRef}
