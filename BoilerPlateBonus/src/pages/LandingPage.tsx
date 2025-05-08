@@ -40,7 +40,7 @@ const LandingPage = () => {
 							title="Formance CLI"
 							src="/icons/arrowRight.png"
 							alt="fctl"
-							width={10}
+							width={2}
 						/>
 						<h1 className="mb-2 text-3xl font-bold text-white md:text-4xl PPNeueMachina-regular">
 							Programmatic payments

@@ -1,6 +1,7 @@
-import React, {  useRef } from "react"
+import React, { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import emitter from "../../utils/EventEmitter"
 
 interface ConnectorsIconesProps {
 	readonly src: string
@@ -17,14 +18,17 @@ export default function ConnectorsIcones({
 
 	useGSAP(
 		() => {
+			emitter.on("startReveal", () => {
+				gsap.to(imgRef.current, {
+					scale: 1,
+					duration: 0.5,
+					delay: delay,
+					ease: "elastic.inOut, 0.5",
+				})
+			})
+
 			gsap.set(imgRef.current, {
 				scale: 0,
-			})
-			gsap.to(imgRef.current, {
-				scale: 1,
-				duration: 0.5,
-				delay: delay,
-				ease: "power2.inOut",
 			})
 		},
 		{ scope: imgRef }
