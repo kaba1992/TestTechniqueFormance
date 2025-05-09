@@ -53,7 +53,7 @@ const LandingPage = () => {
 					</div>
 
 					<div
-						className={`grid gap-1 p-4 rounded-lg text-white Roboto-regular text-2xl min-w-[360px]  min-h-[244px] ${borderAnimClass}`}
+						className={`grid gap-1 p-4 rounded-lg text-white Roboto-regular text-2xl min-w-[300px]  min-h-[244px] ${borderAnimClass}`}
 						ref={containerRef}>
 						<span>
 							<span
@@ -96,7 +96,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 				<div id="bottom-block" className="w-full gap-12 ">
-					<div className="grid grid-cols-1 md:grid-cols-2  gap-6 bg-[#101114] p-6 rounded-xl w-full">
+					<div className="grid grid-cols-1 md:grid-cols-2  gap-12 bg-[#101114] p-6 rounded-xl w-full">
 						<div className="w-full min-h-[300px] flex items-center justify-center">
 							<CircleIconsWrapper
 								icons={connectorsData}

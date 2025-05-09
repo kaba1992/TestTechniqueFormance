@@ -53,7 +53,7 @@ const LandingPage = () => {
 					</div>
 
 					<div
-						className={`grid gap-1 p-4 rounded-lg text-white Roboto-regular text-2xl min-w-[360px]  min-h-[244px] ${borderAnimClass}`}
+						className={`grid gap-1 p-4 rounded-lg text-white Roboto-regular text-2xl min-w-[300px]  min-h-[244px] ${borderAnimClass}`}
 						ref={containerRef}>
 						<span>
 							<span

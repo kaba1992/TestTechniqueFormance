@@ -100,7 +100,7 @@ const CircleIconsWrapper = ({
 			<div ref={containerRef} className="absolute w-full h-full" tabIndex={0}>
 				{icons.map((icon, i) => {
 					const angle = (i / icons.length) * 2 * Math.PI
-					const iconSize = 65 // taille réelle de l'icône
+					const iconSize = 65 
 					const x = Math.cos(angle - Math.PI / 2) * radius + size / 2
 					const y = Math.sin(angle - Math.PI / 2) * radius + size / 2
 					const deg = (angle * 180) / Math.PI
@@ -116,7 +116,7 @@ const CircleIconsWrapper = ({
 									left: size / 2,
 									top: size / 2,
 									width: radius,
-									height: 1,
+									height: 0.5,
 									background: "white",
 									transform: `rotate(${deg + 15}deg)`,
 									transformOrigin: "0 50%",
